@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Khalyfa Fatiha!</title>
+        
+        <!-- lier la page html avec le css pour ajouter le design -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+        <!-- ajouter une police d'ecriture -->
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+        <!-- je prend en compte les accents -->
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <!-- Balise pour le haut de page -->
+        <header>
+            <!-- Titre de la page -->
+            <h1 class="titre">Swissport ✈</h1>
+
+            <!-- Sous Titre-->
+            <h2 class="sous_titre">« Réservation des vols de Marrakech Menara !»</h2>
+            
+
+            <div class="search-form">
+                <!--Formulaire de recherche -->
+                
+                <form method="post">
+                                
+                    <div class="form-group">
+                        
+                        <label for="arriee">Ville d'arrivée</label>
+                        <input type="text" name="arrivee" id="arrivee" placeholder="Paris, Lyon, ...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="depart">Date de départ</label>
+                        <input type="date" name="depart" id="depart" value="13/11/2022">
+
+                        <label for="retour">Date de Retour</label>
+                        <input type="date" name="retour" id="retour" value="14/01/2023">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adultes">Nombre d'adultes</label>
+                        <select name="adultes" id="adultes">
+                            <option selected="selected">0 Adulte</option>
+                            <option>1 Adulte</option>
+                            <option>2 Adultes</option>
+                            <option>3 Adultes</option>
+                            <option>4 Adultes</option>
+                            <option>5 Adultes</option>
+                        </select>
+
+                        <label for="enfants">Nombre d'enfants</label>
+                        <select name="enfants" id="enfants">
+                            <option selected="selected">0 Enfant</option>
+                            <option>1 Enfant</option>
+                            <option>2 Enfants</option>
+                            <option>3 Enfants</option>
+                            <option>4 Enfants</option>
+                            <option>5 Enfants</option>
+                        </select>
+
+                        <label for="type">Categorie</label>
+                        <select name="type" id="type">
+                            <option selected="selected">Classe Economique</option>
+                            <option>Classe Affaires</option>
+                        </select>
+                    </div>
+
+                    <div class="button-submit">
+                        <input type="submit" value="Lancer la recherche" name="recherche" id="recherche">
+                    </div>
+                    
+                </form>
+            </div>     
+            
+
+        </header>
+
+        <!-- Une section avec les destinations -->
+        <section id="destinations">
+
+            <h2>Nous proposons différentes destinations pour découvrir le monde !</h2>
+            <h3>Choisissez la destination et les dates de votre prochain voyage à partir de Marrakech. Veuillez également indiquer le nombre de voyageurs ainsi que votre catégorie sociale.</h3>
+
+            <div class="destinations-group">
+                <!-- destination 1 -->
+                <div class="destination-item Barcelone">
+                    <div class="overlay">
+                        <span class="prix">Dès 26€</span>
+                        <span class="nom">Barcelone</span>
+                    </div>
+                </div>
+
+                <!-- destination 2 -->
+                <div class="destination-item Bordeaux">
+                    <div class="overlay">
+                        <span class="prix">Dès 25€</span>
+                        <span class="nom">Bordeaux</span>
+                    </div>
+                </div>
+
+                <!-- destination 3 -->
+                <div class="destination-item Paris Charles de Gaulle">
+                    <div class="overlay">
+                        <span class="prix">Dès 27€</span>
+                        <span class="nom">Paris_Charles_de_Gaulle</span>
+                    </div>
+                </div>
+
+                <!-- destination 4 -->
+                <div class="destination-item Limoges">
+                    <div class="overlay">
+                        <span class="prix">Dès 28€</span>
+                        <span class="nom">Limoges</span>
+                    </div>
+                </div>
+
+                <!-- destination 5 -->
+                <div class="destination-item Lyon ">
+                    <div class="overlay">
+                        <span class="prix">Dès 35€</span>
+                        <span class="nom">Lyon</span>
+                    </div>
+                </div>
+
+                <!-- destination 6 -->
+                <div class="destination-item Madrid ">
+                    <div class="overlay">
+                        <span class="prix">Dès 18€</span>
+                        <span class="nom">Madrid </span>
+                    </div>
+                </div>
+                <div class="destination-item Marseille ">
+                    <div class="overlay">
+                        <span class="prix">Dès 27€</span>
+                        <span class="nom">Marseille </span>
+                    </div>
+                </div>
+                <div class="destination-item Nantes ">
+                    <div class="overlay">
+                        <span class="prix">Dès 27€</span>
+                        <span class="nom">Nantes </span>
+                    </div>
+                </div>
+                <div class="destination-item Nimes ">
+                    <div class="overlay">
+                        <span class="prix">Dès 25€</span>
+                        <span class="nom">Nimes </span>
+                    </div>
+                </div>
+                <div class="destination-item Paris ">
+                    <div class="overlay">
+                        <span class="prix">Dès 21€</span>
+                        <span class="nom">Paris</span>
+                    </div>
+                </div>
+                <div class="destination-item Toulouse ">
+                    <div class="overlay">
+                        <span class="prix">Dès 20€</span>
+                        <span class="nom">Toulouse</span>
+                    </div>
+                </div>
+                <div class="destination-item Valence">
+                    <div class="overlay">
+                        <span class="prix">Dès 24€</span>
+                        <span class="nom">Valence </span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Pied de page -->
+
+        <footer>
+            <hr>
+            <p>&copy; 2022 - Khalyfa Fatiha - Tout droits réservés - <a href="cgu.html">CGU</a> </p>
+        </footer> 
+
+    </body>
+</html>

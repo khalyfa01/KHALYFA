@@ -1,0 +1,177 @@
+/* il faut tout d'abord relier la partie css et la partie html */
+
+*{
+    font-family: 'Acme',sans-serif;
+}
+body {
+    background-color:cornflowerblue;
+    margin: 0 auto;
+    color:rgb(9, 8, 9);
+    
+    
+
+}
+header {
+    background: url(../IMAGES/Sky.jpg)100% fixed;
+    height: 60vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:2px;
+}
+h1.titre{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+h2.sous_titre {
+    font-size:50px;
+    font-style: italic;
+}
+/*Destinations */
+div.destination-item {
+    color:black;
+    width: 400px;
+    height: 450px;
+    margin: 10px;
+    flex:1 0 21%;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+div.destination-item:hover{
+    transform: scale(1.2);
+    transition: 0.3s all;
+    /*box-shadow: 0 8px 16px 0 rgb(0, 0, 0,0.4),0 6px 20px 0 rgb(0, 0, 0, 0.19);*/
+
+}
+
+div.destinations-group{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 20px;
+    flex-wrap: wrap;
+   
+}
+.Barcelone{
+    background: url(../IMAGES/Barcelone.jpg);
+}
+.Bordeaux{
+    background: url(../IMAGES/Bordeaux\ \(3\).jpg);
+}
+.Paris_Charles_de_Gaulle{
+    background: url(../IMAGES/Charles\ de\ Gaulle.jpg);
+
+}
+.Limoges{
+    background: url(../IMAGES/Limoges.jpg);
+}
+.Lyon{
+    background: url(../IMAGES/Lyon\ \(2\).jpg);
+}
+.Madrid{
+    background: url(../IMAGES/Madrid.jpg);
+}
+.Marseille{
+    background: url(../IMAGES/Marseille.jpg);
+}
+.Nantes{
+    background: url(../IMAGES/Nantes.jpg);
+}
+.Nimes{
+    background: url(../IMAGES/Nimes\ \(2\).jpg);
+}
+.Paris{
+    background: url(../IMAGES/Paris\ \(2\).jpg);
+}
+.Toulouse{
+    background: url(../IMAGES/Toulouse\ \(2\).jpg);
+}
+.Valence{
+    background: url(../IMAGES/Valence.jpg);
+}
+.overlay{
+    
+    position: absolute;
+    left: 10;
+    right: 10;
+    bottom: 10;
+    top:10;
+}
+
+span.nom{
+    position:relative;
+   
+    color:blueviolet;
+    background-color: aliceblue;
+    top: 20px;
+    
+    padding: 12px;
+    font-size: 24px;
+}
+span.prix{
+    position: relative;
+    color: rgb(240, 233, 231);
+    background-color:rgb(246, 67, 7);
+    padding: 18px;
+    top: 180px;
+    font-size: 25px;
+    bottom:0px;
+    top:220px;
+
+}
+header form{
+    background-color:orangered;
+    padding: 5px;
+}
+.form-group{
+    display:flex;
+    justify-content: center;
+    flex-direction:inherit;
+    color:black;
+    margin: 20px;
+}
+.form-group input,select,option{
+    border: none;
+    padding: 10px;
+    background-color: bisque;
+}
+.button-submit{
+    text-align:center;
+    padding: 30px;
+   
+}
+.form-group label{
+    margin:20px;
+    
+}
+.button-submit input{
+    background-color:indigo;
+    border: none;
+    color:rgb(220, 245, 234);
+    font-size: 30px;
+    padding: 20px;
+}
+section#destinations h2{
+    padding-top: 50px;
+    font-size: 35px;
+   
+}
+.search-form{
+    margin-bottom: -100px;
+}
+footer p{
+    text-align: center;
+    color: black;
+    padding: 10px;
+
+}
+    
+section#destinations h3{
+    color: black;
+    font-size: 20px;
+    
+ 
+}
